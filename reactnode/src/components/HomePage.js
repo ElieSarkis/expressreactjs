@@ -125,7 +125,12 @@ function HomePage() {
         <div>
           {" "}
           <h3>Your total price is: {sum} USD</h3>
-          <Link to="/items">
+          <Link
+            to={{
+              pathname: "/items",
+              state: allItems,
+            }}
+          >
             <button>View your order</button>
           </Link>
         </div>
